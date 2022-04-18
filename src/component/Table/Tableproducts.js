@@ -9,11 +9,11 @@ const Tableproducts = (props) => {
         <td>
           <img src={props.image} alt="foto" style={{ width: "100px" }} />
         </td>
-        <td className="">{props.title}</td>
-        <td className="">{props.desc}</td>
-        <td className="">{props.price}</td>
-        <td className="">{props.stock}</td>
-        <td>
+        <td className="align-middle">{props.title}</td>
+        <td className="align-middle">{props.desc}</td>
+        <td className="align-middle">{props.price}</td>
+        <td className="align-middle">{props.stock}</td>
+        <td className="align-middle">
           <div class="d-flex">
             <div to="/edit-product">
               <Link to="/edit-product" class="btn btn-success m-1 px-4" type="button">

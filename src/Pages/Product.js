@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../component/Navbar/Navbar";
 import { Data } from "../component/Card/DataDummys";
 import Tableproducts from "../component/Table/Tableproducts";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -10,7 +11,14 @@ const Product = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <h2 className="text-danger mt-5 text-lg-start text-center">List Product</h2>
+            <div className="d-flex justify-content-between">
+              <h2 className="text-danger mt-5 text-lg-start text-center">List Product</h2>
+              <div className=" mt-5 text-lg-start text-center ">
+                <Link to="/add-product" className="btn btn-dark m-1 px-5" type="button">
+                  Add
+                </Link>
+              </div>
+            </div>{" "}
             <table className="table table-dark table-striped mt-4">
               <thead>
                 <tr>

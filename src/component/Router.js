@@ -11,6 +11,9 @@ import Productedit from "../Pages/Productedit";
 import Profile from "../Pages/Profile";
 import Register from "../Pages/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AdinChat from "../Pages/AdinChat";
+import AddCategory from "../Pages/AddCategory";
+import AddProduct from "../Pages/AddProduct";
 
 const Router = () => {
   return (
@@ -24,7 +27,11 @@ const Router = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/detail-product/:id" element={<Detailproduct />} />
         <Route path="/user-complain" element={<Complainuser />} />
-        <Route path="/edit-category/:id" element={<Categoriedit />} />
+        <Route path="/admin-complain" element={<AdinChat />} />
+        <Route path="/edit-category/" element={<Categoriedit />} />
+        <Route path="/add-category/" element={<AddCategory />} />
+        <Route path="/add-product/" element={<AddProduct />} />
+
         <Route path="/category" element={<Categori />} />
       </Routes>
     </BrowserRouter>

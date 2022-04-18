@@ -5,8 +5,10 @@ const Tablecategory = (props) => {
   return (
     <tbody className="">
       <tr className="">
-        <td scope="row">{props.id}</td>
-        <td>{props.categori}</td>
+        <td scope="row" className="align-middle">
+          {props.id}
+        </td>
+        <td className="align-middle">{props.categori}</td>
         <td className="">
           <div className="d-flex">
             <div to="/edit-category">
