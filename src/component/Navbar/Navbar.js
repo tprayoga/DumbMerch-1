@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Merch from "../assets/Frame (1).png";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  const [isAdmin] = useState(false);
+  const [isAdmin] = useState(true);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
