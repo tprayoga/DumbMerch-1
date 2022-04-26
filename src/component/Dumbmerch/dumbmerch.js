@@ -13,11 +13,11 @@ const dumbmerch = () => {
         </p>
       </div>
       <div className=" mt-5">
-        <Link to="/login" className="btn btn-danger me-2 py-2 px-4" type="button">
+        <Link to="/" className="btn btn-danger me-2 py-2 px-4" type="button">
           <strong>Login</strong>
         </Link>
 
-        <Link to="/" className="btn btn-dark py-2 px-3" type="button">
+        <Link to="/register" className="btn btn-dark py-2 px-3" type="button">
           <strong>Register</strong>
         </Link>
       </div>

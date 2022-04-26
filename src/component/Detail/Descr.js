@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Data } from "../Card/DataDummys";
 
 const Descr = () => {
@@ -42,9 +42,9 @@ const Descr = () => {
         </button>
       </div>
       <div className="d-grid">
-        <button className="btn btn-lg btn-danger mb-2" type="button">
+        <Link to="/profile" className="btn btn-lg btn-danger mb-2" type="button">
           Buy
-        </button>
+        </Link>
         <button className="btn btn-lg btn-dark mb-2" type="button">
           Wishlist
         </button>

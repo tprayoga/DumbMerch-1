@@ -10,11 +10,11 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="mt-5 container">
-        <div className="row m-4">
+        <div className="row m-4 justify-content-center">
           <div className="d-flex justify-content-between">
             <h2 className="text-danger mb-4">Products</h2>
             <form className="ms-3">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={(e) => setQuery(e.target.value.toLowerCase())} />
+              <input className="form-control " type="search" placeholder="Search" aria-label="Search" onChange={(e) => setQuery(e.target.value.toLowerCase())} />
             </form>
           </div>
           {Data.filter((Data) => Data.title.toLowerCase().includes(query)).map((item, index) => {

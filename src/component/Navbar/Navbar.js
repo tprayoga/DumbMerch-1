@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Merch from "../assets/Frame (1).png";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [isAdmin] = useState(false);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
@@ -21,7 +21,7 @@ const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex">
-            {show ? (
+            {isAdmin ? (
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item d-flex">
                   <NavLink className="nav-link fs-5" aria-current="page" to="/user-complain" style={({ isActive }) => ({ color: isActive ? "#f74d4d" : "#ffffff" })}>

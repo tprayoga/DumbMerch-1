@@ -11,7 +11,7 @@ const Formregister = () => {
         <input type="text" className="form-control py-3 mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name" style={{}}></input>
         <input type="email" className="form-control py-3 mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" style={{}}></input>
         <input type="password" id="inputPassword5" className="form-control py-3 mb-5" aria-describedby="passwordHelpBlock" placeholder="Password"></input>
-        <Link to="/login" className="btn btn-danger py-3" type="button">
+        <Link to="/" className="btn btn-danger py-3" type="button">
           Register
         </Link>
       </form>
